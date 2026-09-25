@@ -137,7 +137,18 @@ MAILERS = {
     },
 }
 
+INSTALLED_APPS = [
+    # ...
+    'rest_framework',
+    'django_filters',  # <-- Adicionar aqui
+    'core',
+]
+
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 10,  # Retorna 10 itens por página no GET
+    'PAGE_SIZE': 10,
+    'DEFAULT_FILTER_BACKENDS': [
+        'django_filters.rest_framework.DjangoFilterBackend',
+        'rest_framework.filters.SearchFilter',
+    ],
 }
