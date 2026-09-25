@@ -1,3 +1,6 @@
+# Atividade_Django
+Trabalho da disciplina Tópicos Especiais de Software do professor Rhafael Freitas da Costa
+
 # API RESTful - Loja de Impressão 3D
 
 API criada com Django e Django REST Framework para gerenciamento de filamentos e modelos de impressão 3D.
