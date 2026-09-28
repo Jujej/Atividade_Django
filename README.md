@@ -12,3 +12,4 @@ API criada com Django e Django REST Framework para gerenciamento de filamentos e
    ```bash
    python -m venv .venv
    .\.venv\Scripts\Activate.ps1
+   python manage.py runserver
